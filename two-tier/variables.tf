@@ -24,7 +24,7 @@ variable "aws_region" {
 variable "aws_amis" {
   type = "map"
   default = {
-     cn-north-1 = "ami-070bbaf63a64f1ddc"
-     cn-northwest-1 = "ami-0e21949a0d60b93e2"
+     cn-north-1 = "ami-04efbaf491dc3e681"
+     cn-northwest-1 = "ami-032ddff247c0bae9e"
   }
 }

@@ -101,8 +101,10 @@ resource "aws_instance" "tf_ec2" {
   # communicate with the resource (instance)
   connection {
     # The default username for our AMI
+    type = "ssh"
     user = "ubuntu"
     host = "${self.public_ip}"
+    private_key = file("~/.ssh/id_rsa")
     # The connection will use the local SSH agent for authentication.
   }
 
